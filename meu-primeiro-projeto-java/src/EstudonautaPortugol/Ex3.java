@@ -1,0 +1,30 @@
+package EstudonautaPortugol;
+
+import java.util.Scanner;
+
+public class Ex3 {
+
+	public static void main(String[] args) {
+
+        float n1, n2, m = 0;
+        
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Primeira nota: ");
+        
+        n1 = teclado.nextFloat();
+
+        System.out.print("Segunda nota: ");
+        
+        n2 = teclado.nextFloat();
+
+        teclado.close();
+        
+        m = (n1 + n2) / 2;
+
+        System.out.println("\n---------- RESULTADOS ----------");
+        System.out.println("\nAs notas dos alunos foram: " + n1 + " e " + n2);
+        System.out.println("\nA média final foi " + m);
+        System.out.println("\n\n");
+    }
+}
