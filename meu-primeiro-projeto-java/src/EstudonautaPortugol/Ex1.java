@@ -3,20 +3,16 @@ package EstudonautaPortugol;
 import java.util.Scanner;
 
 public class Ex1 {
-
     public static void main(String[] args) {
-        int n;
-        
-        Scanner teclado = new Scanner(System.in);
+        String nome;
 
-        System.out.print("Me diga um número: ");
-        
-        n = Integer.parseInt(teclado.nextLine());
+        Scanner teclado = new Scanner(System.in);
+		
+		System.out.print("Olá, qual é o seu nome? ");
+		nome = teclado.nextLine();
 
         teclado.close();
-
-        System.out.println("O antecessor de " + n + " é " + (n-1));
-        System.out.println("\nO sucessor de " + n + " é " + (n+1));
-        System.out.println("\n\n");
+		
+		System.out.println("Tudo bem, " + nome + "? É um grande prazer te conhecer!");
     }
 }
