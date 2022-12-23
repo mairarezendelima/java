@@ -8,13 +8,10 @@ public class Ex4 {
         int n1, n2;
         
         Scanner teclado = new Scanner(System.in);
-
+        
         System.out.print("Digite um número: ");
-        
         n1 = Integer.parseInt(teclado.nextLine());
-
         System.out.print("Digite outro número: ");
-        
         n2 = Integer.parseInt(teclado.nextLine());
 
         teclado.close();

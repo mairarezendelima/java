@@ -11,11 +11,8 @@ public class Ex5 {
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Primeira nota: ");
-        
         n1 = teclado.nextFloat();
-
         System.out.print("Segunda nota: ");
-        
         n2 = teclado.nextFloat();
 
         teclado.close();
@@ -24,7 +21,7 @@ public class Ex5 {
 
         System.out.println("\n---------- RESULTADOS ----------");
         System.out.println("\nAs notas dos alunos foram: " + n1 + " e " + n2);
-        System.out.println("\nA média final foi " + m);
+        System.out.printf("\nA média final foi: %.2f " , m);
         System.out.println("\n\n");
     }
 }
