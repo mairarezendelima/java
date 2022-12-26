@@ -43,5 +43,7 @@ public class Ex24 {
         else if (estado == "SP") {System.out.println("paulista");}
         else if (estado == "SE") {System.out.println("sergipano");}
         else if (estado == "TO") {System.out.println("tocantinense");}
+        
+        System.out.println("\n\n");
     }
 }
