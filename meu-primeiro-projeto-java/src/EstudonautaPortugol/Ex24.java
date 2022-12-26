@@ -15,35 +15,88 @@ public class Ex24 {
 
         estado = estado.toUpperCase();
 
-        System.out.println("Nascendo no estado " + estado + ", você é ");
+        System.out.print("Nascendo no estado " + estado + ", você é");
 
-		if (estado == "AC") {System.out.println("acriano");}
-        else if (estado == "AL") {System.out.println("alagoano");}
-        else if (estado == "AP") {System.out.println("amapaense");}
-        else if (estado == "BA") {System.out.println("baiano");}
-        else if (estado == "CE") {System.out.println("cearense");}
-        else if (estado == "DF") {System.out.println("brasiliense");}
-        else if (estado == "ES") {System.out.println("capixaba");}
-        else if (estado == "GO") {System.out.println("goiano");}
-        else if (estado == "MA") {System.out.println("maranhense");}
-        else if (estado == "MT") {System.out.println("mato-grossense");}
-        else if (estado == "MS") {System.out.println("sul-mato-grossense");}
-        else if (estado == "MG") {System.out.println("mineiro");}
-        else if (estado == "PA") {System.out.println("paraense");}
-        else if (estado == "PB") {System.out.println("paraibano");}
-        else if (estado == "PR") {System.out.println("paranaense");}
-        else if (estado == "PE") {System.out.println("pernambucano");}
-        else if (estado == "PI") {System.out.println("piauiense");}
-        else if (estado == "RJ") {System.out.println("fluminense");}
-        else if (estado == "RN") {System.out.println("potiguar");}
-        else if (estado == "RS") {System.out.println("gaucho");}
-        else if (estado == "RO") {System.out.println("rondoniano");}
-        else if (estado == "RR") {System.out.println("roraimense");}
-        else if (estado == "SC") {System.out.println("catarinense");}
-        else if (estado == "SP") {System.out.println("paulista");}
-        else if (estado == "SE") {System.out.println("sergipano");}
-        else if (estado == "TO") {System.out.println("tocantinense");}
-        
+		switch(estado) {
+            case "AC":
+                System.out.print(" acriano");
+                break;
+            case "AL":
+                System.out.print(" alagoano");
+                break;
+            case "AP":
+                System.out.print(" amapaense");
+                break;
+            case "BA":
+                System.out.print(" baiano");
+                break;
+            case "CE":
+                System.out.print(" cearense");
+                break;
+            case "DF":
+                System.out.print(" brasiliense");
+                break;
+            case "ES":
+                System.out.print(" capixaba");
+                break;
+            case "GO":
+                System.out.print(" goiano");
+                break;
+            case "MA":
+                System.out.print(" maranhense");
+                break;
+            case "MT":
+                System.out.print(" mato-grossense");
+                break;
+            case "MS":
+                System.out.print(" sul-mato-grossense");
+                break;
+            case "MG":
+                System.out.print(" mineiro");
+                break;
+            case "PA":
+                System.out.print(" paraense");
+                break;
+            case "PB":
+                System.out.print(" paraibano");
+                break;
+            case "PR":
+                System.out.print(" paranaense");
+                break;
+            case "PE":
+                System.out.print(" pernambucano");
+                break;
+            case "PI":
+                System.out.print(" piauiense");
+                break;
+            case "RJ":
+                System.out.print(" fluminense");
+                break;
+            case "RN":
+                System.out.print(" potiguar");
+                break;
+            case "RS":
+                System.out.print(" gaucho");
+                break;
+            case "RO":
+                System.out.print(" rondoniano");
+                break;
+            case "RR":
+                System.out.print(" roraimense");
+                break;
+            case "SC":
+                System.out.print(" catarinense");
+                break;
+            case "SP":
+                System.out.print(" paulista");
+                break;
+            case "SE":
+                System.out.print(" sergipano");
+                break;
+            case "TO":
+                System.out.print(" tocantinense");
+                break;
+        }
         System.out.println("\n\n");
     }
 }

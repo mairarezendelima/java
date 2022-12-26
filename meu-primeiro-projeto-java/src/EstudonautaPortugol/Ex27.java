@@ -10,7 +10,7 @@ public class Ex27 {
         Scanner teclado = new Scanner(System.in);
         DecimalFormat deci = new DecimalFormat("0.00");
         
-        System.out.println("Qual é o seu peso na Terra (Kg)? ");
+        System.out.print("Qual é o seu peso na Terra (Kg)? ");
 		peso = teclado.nextFloat();
 
 		System.out.println("\n===== Escolha um planeta =====");
@@ -23,7 +23,7 @@ public class Ex27 {
 		System.out.println("\n7\tNetuno");
 		
 		System.out.println("\n---------------------------------------------------");
-		System.out.println("\nDigite sua opção --> ");
+		System.out.print("\nDigite sua opção --> ");
 		opcao = teclado.nextInt();
 
         teclado.close();
