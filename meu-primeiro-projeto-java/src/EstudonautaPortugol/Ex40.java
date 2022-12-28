@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ex40 {
     public static void main(String[] args) throws InterruptedException {
-        int n1 = 0, n2 = 0, opcao = 0;
+        int n1, n2, opcao = 0;
 		
         Scanner teclado = new Scanner(System.in);
         
@@ -23,36 +23,29 @@ public class Ex40 {
 
             System.out.print("\n>>>>>> Sua opção: ");
             opcao = teclado.nextInt();
-            
-            switch(opcao) {
-                case 1:
-                    System.out.println("---------------------------------");
-                    System.out.println("\nCalculando " + n1 + " + " + n2 + " = " + (n1 + n2));
-                    System.out.println("\n---------------------------------");
-                    break;
-                case 2:
-                    System.out.println("---------------------------------");
-                    System.out.println("\nCalculando " + n1 + " - " + n2 + " = " + (n1 - n2));
-                    System.out.println("\n---------------------------------");
-                    break;
-                case 3:
-                    System.out.println("---------------------------------");
-                    System.out.println("\nCalculando " + n1 + " * " + n2 + " = " + (n1 * n2));
-                    System.out.println("\n---------------------------------");
-                    break;
-                case 4:
-                    System.out.print("\nOperando 1: ");
-                    n1 = teclado.nextInt();
-                    System.out.print("Operando 2: ");
-                    n2 = teclado.nextInt();
-                    break;
-                case 5:
-                    System.out.println("\n======== Saindo ========");
-                    System.out.println("\n===== Volte sempre =====");
-                    break;
-                default:
-                    System.out.println("\n===== Opção inválida! =====\n");
-                    break;
+
+            if (opcao == 1) {
+                System.out.println("---------------------------------");
+                System.out.println("\nCalculando " + n1 + " + " + n2 + " = " + (n1 + n2));
+                System.out.println("\n---------------------------------");
+            } else if (opcao == 2) {
+                System.out.println("---------------------------------");
+                System.out.println("\nCalculando " + n1 + " - " + n2 + " = " + (n1 - n2));
+                System.out.println("\n---------------------------------");
+            } else if (opcao == 3) {
+                System.out.println("---------------------------------");
+                System.out.println("\nCalculando " + n1 + " * " + n2 + " = " + (n1 * n2));
+                System.out.println("\n---------------------------------");
+            } else if (opcao == 4) {
+                System.out.print("\nOperando 1: ");
+                n1 = teclado.nextInt();
+                System.out.print("Operando 2: ");
+                n2 = teclado.nextInt();
+            } else if (opcao == 5) {
+                System.out.println("\n======== Saindo ========");
+                System.out.println("\n===== Volte sempre =====");
+            } else {
+                System.out.println("\n===== Opção inválida! =====\n");
             }
             Thread.sleep(500);
         }
