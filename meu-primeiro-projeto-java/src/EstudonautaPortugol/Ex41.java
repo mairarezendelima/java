@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Ex41 {
     public static void main(String[] args) {
-        String nome = "", jovem = "", velho = "";
-		int idade = 0, indice = 0, idadeVelho = 0, idadeJovem = 0, soma = 0;
+        String nome, jovem = "", velho = "";
+		int idade, indice = 0, idadeVelho = 0, idadeJovem = 0, soma = 0;
 		float media;
 
         Scanner teclado = new Scanner(System.in);
@@ -16,11 +16,9 @@ public class Ex41 {
 			System.out.println("------------ NOVO AMIGO ------------");
 			System.out.println("\nOBS: Digite ACABOU no nome para parar");
 			System.out.print("\nNome: ");
-			nome = teclado.nextLine();
+			nome = teclado.next();
 
-			if (nome.toUpperCase() == "ACABOU"){
-			    break;
-			}
+			if (nome.equalsIgnoreCase("ACABOU")) break; // Ignora se está em maiúsculas ou minúsculas; Os sinais "==" não funcionaram, deram erro
 
 			System.out.print("Idade: ");
 			idade = teclado.nextInt();
