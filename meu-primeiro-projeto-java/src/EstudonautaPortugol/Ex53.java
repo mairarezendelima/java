@@ -1,0 +1,56 @@
+package EstudonautaPortugol;
+//revisar código
+import java.util.Scanner;
+
+public class Ex53 {
+    public static void main(String[] args) {
+        int numero, soma = 0, indice = 1;
+        String valor;
+        char cont;
+        boolean integerOrNot;
+
+        Scanner teclado = new Scanner(System.in);
+
+        do {
+            while (true) {
+                System.out.print("Digite o " + indice + "º número: ");
+                valor = teclado.next();
+
+                integerOrNot = valor.matches("-?\\d+");
+
+                if (integerOrNot) {
+                    numero = Integer.parseInt(valor); // converte string em inteiro
+                    if (numero >= 1 && numero <= 10) {
+                        break;
+                    } else {
+                        System.out.println("ERRO. O valor deve estar entre 1 e 10\n");
+                    }
+                } else {
+                    System.out.println("ERRO. O valor deve ser um número inteiro\n");
+                }
+            }
+            indice += 1;
+            soma += numero;
+
+            System.out.print("Quer continuar? [S/N] ");
+            cont = teclado.next().charAt(0);
+
+            if (Character.isLetter(cont)) {
+                if (Character.toUpperCase(cont) == 'N' || Character.toUpperCase(cont) =='S') {
+                    break;
+                } else {
+                    System.out.println("ERRO. Por favor, responda S ou N\n");
+                }
+            } else {
+                System.out.println("ERRO. O valor deve ser uma letra\n");
+            }
+
+        } while (Character.toUpperCase(cont) == 'S');
+
+        System.out.println("\n-------------------------");
+        System.out.println("\nVocê digitou " + indice + " valores");
+        System.out.println("\nA soma entre eles é " + soma);
+        System.out.println("\n-------------------------");
+        System.out.println("\n\n");
+    }
+}
