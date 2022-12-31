@@ -6,7 +6,7 @@ public class Ex53 {
     public static void main(String[] args) {
         int numero, soma = 0, indice = 1;
         String valor;
-        char cont;
+        char continuar;
         boolean integerOrNot;
 
         Scanner teclado = new Scanner(System.in);
@@ -32,25 +32,27 @@ public class Ex53 {
             indice += 1;
             soma += numero;
 
-            System.out.print("Quer continuar? [S/N] ");
-            cont = teclado.next().charAt(0);
+            while(true) {
+                System.out.print("Quer continuar? [S/N] ");
+                continuar = teclado.next().charAt(0);
 
-            if (Character.isLetter(cont)) {
-                if (Character.toUpperCase(cont) == 'N' || Character.toUpperCase(cont) =='S') {
-                    break;
+                if (Character.isLetter(continuar)) {
+                    if (Character.toUpperCase(continuar) == 'N' || Character.toUpperCase(continuar) == 'S') {
+                        break;
+                    }
+                    else {
+                        System.out.println("ERRO. Por favor, responda S ou N\n");
+                    }
                 } else {
-                    System.out.println("ERRO. Por favor, responda S ou N\n");
+                    System.out.println("ERRO. O valor deve ser uma letra\n");
                 }
-            } else {
-                System.out.println("ERRO. O valor deve ser uma letra\n");
             }
-
-        } while (Character.toUpperCase(cont) == 'S');
+        } while (Character.toUpperCase(continuar) == 'S');
 
         System.out.println("\n-------------------------");
-        System.out.println("\nVocê digitou " + indice + " valores");
-        System.out.println("\nA soma entre eles é " + soma);
+        System.out.println("Você digitou " + indice + " valores");
+        System.out.println("A soma entre eles é " + soma);
         System.out.println("\n-------------------------");
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

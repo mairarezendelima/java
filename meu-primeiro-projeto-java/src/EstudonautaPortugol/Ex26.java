@@ -23,24 +23,17 @@ public class Ex26 {
 		opcao = teclado.next(".").charAt(0); // digitar 1, 2, 3 ou 4, que estão em formato de caracteres
 
 		System.out.println("\n------------------------------");
-		
-		switch(opcao)
-		{
-			case '1':
-				opcao = '+';
-				break;
-			case '2':
-				opcao = '-';
-				break;
-			case '3':
-				opcao = '*';
-				break;
-			case '4':
-				opcao = '/';
-				break;
-			default:
-				opcao = '+';
-				break;
+
+		if (opcao == '1') {
+			opcao = '+';
+		} else if (opcao == '2') {
+			opcao = '-';
+		} else if (opcao == '3') {
+			opcao = '*';
+		} else if (opcao == '4') {
+			opcao = '/';
+		} else {
+			opcao = '+';
 		}
 		System.out.println("\nVocê escolheu a opção " + opcao);
 
@@ -56,24 +49,17 @@ public class Ex26 {
 		System.out.println("\nRealizando a operação " + num1 + " " + opcao + " " + num2);
 		System.out.println("\n\n--------- PROCESSANDO ---------");
 		System.out.print("\nO resultado da ");
-		
-		switch(opcao)
-		{ 
-			case '+':
-			    System.out.print("adição é " + (num1 + num2));
-				break;
-		    case '-':
-				System.out.print("subtração é " + (num1 - num2));
-				break;
-		    case '*':
-				System.out.print("multiplicação é " + (num1 * num2));
-                break;
-		    case '/':
-		     	System.out.print("divisão é " + deci.format(num1Float / num2Float));
-                break;
-		    default:
-		     	System.out.println("Erro! Sua operação não foi realizada");
-				break;
+
+		if (opcao == '+') {
+			System.out.print("adição é " + (num1 + num2));
+		} else if (opcao == '-') {
+			System.out.print("subtração é " + (num1 - num2));
+		} else if (opcao == '*') {
+			System.out.print("multiplicação é " + (num1 * num2));
+		} else if (opcao == '/') {
+			System.out.print("divisão é " + deci.format(num1Float / num2Float));
+		} else {
+			System.out.println("Erro! Sua operação não foi realizada");
 		}
 		System.out.println("\n-------------------------------");
 		System.out.println("\n\n");

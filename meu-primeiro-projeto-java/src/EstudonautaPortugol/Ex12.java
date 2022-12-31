@@ -14,7 +14,7 @@ public class Ex12 {
 
         teclado.close();
 
-        posi = nomecompl.indexOf(" ", 0); // índice da primeira ocorrência de espaço vazio a partir do início
+        posi = nomecompl.indexOf(" "); // índice da primeira ocorrência de espaço vazio a partir do início
         pnome = nomecompl.substring(0, posi);
         
         System.out.println("Seu primeiro nome é " + pnome.toUpperCase());

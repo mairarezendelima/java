@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class Ex54 {
     public static void main(String[] args) {
         int idade, c = 0, menor = 0, maior = 0;
-        String texto, nome, nova = "", velha ="", valor, continuar;
-        char resp;
+        String texto, nome, nova = "", velha ="", valor;
+        char continuar;
         boolean integerOrNot;
 
         Scanner teclado = new Scanner(System.in);
 
         do {
             System.out.println("-------------------------");
-            System.out.println("\n       PESSOA " + (c + 1) + "       ");
-            System.out.println("\n-------------------------");
+            System.out.println("       PESSOA " + (c + 1) + "       ");
+            System.out.println("-------------------------");
             while(true) {
-                System.out.println("\nNOME: ");
+                System.out.print("NOME: ");
                 texto = teclado.next();
                 if (texto.length() >= 3) {
                     nome = texto;
@@ -27,7 +27,7 @@ public class Ex54 {
                 }
             }
             while(true) {
-                System.out.println("IDADE: ");
+                System.out.print("IDADE: ");
                 valor = teclado.next();
 
                 integerOrNot = valor.matches("-?\\d+");
@@ -63,11 +63,10 @@ public class Ex54 {
                 }
             }
             while(true) {
-                System.out.println("Quer continuar? [S/N] ");
-                continuar = teclado.next();
-                if (Character.isLetter(Integer.parseInt(continuar))){
-                    resp = continuar.charAt(0);
-                    if (resp == 'S' || resp == 's' || resp == 'N' || resp == 'n') {
+                System.out.print("Quer continuar? [S/N] ");
+                continuar = teclado.next().charAt(0);
+                if (Character.isLetter(continuar)){
+                    if ((Character.toUpperCase(continuar) == 'S' || Character.toUpperCase(continuar) == 'N')) {
                         break;
                     }
                     else {
@@ -78,7 +77,7 @@ public class Ex54 {
                     System.out.println("ERRO. O valor deve ser uma letra\n");
                 }
             }
-        } while (Character.toUpperCase(resp) == 'S' || Character.toUpperCase(resp) =='N');
+        } while (Character.toUpperCase(continuar) == 'S');
         System.out.println("\n==============================");
         System.out.println("\nVocê cadastrou " + c + " pessoas");
         System.out.println("\n" + nova + " é a pessoa mais nova, com " + menor + " anos");

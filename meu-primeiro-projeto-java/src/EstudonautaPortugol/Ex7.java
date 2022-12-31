@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Ex7 {
     public static void main(String[] args) {
-		float l = 0, a = 0, ar, lt;
+		float l, a, ar, lt;
 
 		Scanner teclado = new Scanner(System.in);
         DecimalFormat deci = new DecimalFormat("0.00");

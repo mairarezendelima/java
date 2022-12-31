@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ex32 {
     public static void main(String[] args) {
-        int indice = 1, valor = 0, somaPares = 0, somaImpares = 0;
+        int indice = 1, valor, somaPares = 0, somaImpares = 0;
 
         Scanner teclado = new Scanner(System.in);
 

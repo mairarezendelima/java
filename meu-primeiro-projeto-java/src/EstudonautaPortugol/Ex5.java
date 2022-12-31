@@ -6,7 +6,7 @@ public class Ex5 {
 
 	public static void main(String[] args) {
 
-        float n1, n2, m = 0;
+        float n1, n2, m;
         
         Scanner teclado = new Scanner(System.in);
 

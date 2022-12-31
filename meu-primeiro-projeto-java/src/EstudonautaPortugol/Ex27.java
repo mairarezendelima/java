@@ -30,32 +30,22 @@ public class Ex27 {
 
 		System.out.println("----------------------------------------------------");
 
-		switch(opcao)
-		{
-			case 1:
-				System.out.println("\nNo planeta Mercúrio, seu peso seria de " + deci.format(peso * 0.37) + " Kg");
-				break;
-			case 2:
-				System.out.println("\nNo planeta Vênus, seu peso seria de " + deci.format(peso * 0.88) + " Kg");
-				break;
-			case 3:
-				System.out.println("\nNo planeta Marte, seu peso seria de " + deci.format(peso * 0.38) + " Kg");
-				break;
-			case 4:
-				System.out.println("\nNo planeta Júpiter, seu peso seria de " + deci.format(peso * 2.64) + " Kg");
-				break;
-			case 5:
-				System.out.println("\nNo planeta Saturno, seu peso seria de " + deci.format(peso * 1.15) + " Kg");
-				break;
-			case 6:
-				System.out.println("\nNo planeta Urano, seu peso seria de " + deci.format(peso * 1.17) + " Kg");
-				break;
-			case 7:
-				System.out.println("\nNo planeta Netuno, seu peso seria de " + deci.format(peso * 1.18) + " Kg");
-				break;
-			default:
-				System.out.println("\nErro! Tente novamente!");
-				break;
+		if (opcao == 1) {
+			System.out.println("\nNo planeta Mercúrio, seu peso seria de " + deci.format(peso * 0.37) + " Kg");
+		} else if (opcao == 2) {
+			System.out.println("\nNo planeta Vênus, seu peso seria de " + deci.format(peso * 0.88) + " Kg");
+		} else if (opcao == 3) {
+			System.out.println("\nNo planeta Marte, seu peso seria de " + deci.format(peso * 0.38) + " Kg");
+		} else if (opcao == 4) {
+			System.out.println("\nNo planeta Júpiter, seu peso seria de " + deci.format(peso * 2.64) + " Kg");
+		} else if (opcao == 5) {
+			System.out.println("\nNo planeta Saturno, seu peso seria de " + deci.format(peso * 1.15) + " Kg");
+		} else if (opcao == 6) {
+			System.out.println("\nNo planeta Urano, seu peso seria de " + deci.format(peso * 1.17) + " Kg");
+		} else if (opcao == 7) {
+			System.out.println("\nNo planeta Netuno, seu peso seria de " + deci.format(peso * 1.18) + " Kg");
+		} else {
+			System.out.println("\nErro! Tente novamente!");
 		}
 		System.out.println("\n\n");
     }
