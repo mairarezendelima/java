@@ -1,5 +1,5 @@
 package EstudonautaPortugol;
-//revisar código
+
 import java.util.Scanner;
 
 public class Ex54 {
