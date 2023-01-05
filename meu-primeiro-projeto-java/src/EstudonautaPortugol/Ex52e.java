@@ -27,6 +27,6 @@ public class Ex52e {
             quantEstrelas -= 1;
             System.out.print("\n");
         }
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

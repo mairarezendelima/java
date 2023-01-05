@@ -18,8 +18,8 @@ public class Ex44 {
 
             soma += numero;
 
-            System.out.println("\nO " + indice + "º valor sorteado foi " + numero);
-            System.out.println("\nQuer sortear mais um? [S/N] ");
+            System.out.println("O " + indice + "º valor sorteado foi " + numero);
+            System.out.println("Quer sortear mais um? [S/N] ");
             sortear = teclado.next().charAt(0);
             if (numero == 5) {
                 quant5sorteado += 1;
@@ -38,11 +38,11 @@ public class Ex44 {
             }
         } while (Character.toUpperCase(sortear) == 'S');
 
-        System.out.println("\n----------------------------------");
-        System.out.println("\nVocê me fez sortear " + indice + " valores");
-        System.out.println("\nA soma de todos eles foi igual a " + soma);
-        System.out.println("\nO maior valor foi " + maior + " e o menor valor foi " + menor);
-        System.out.println("\nO valor 5 foi sorteado " + quant5sorteado + " vezes");
-        System.out.println("\n\n");
+        System.out.println("----------------------------------");
+        System.out.println("Você me fez sortear " + indice + " valores");
+        System.out.println("A soma de todos eles foi igual a " + soma);
+        System.out.println("O maior valor foi " + maior + " e o menor valor foi " + menor);
+        System.out.println("O valor 5 foi sorteado " + quant5sorteado + " vezes");
+        System.out.println("\n");
     }
 }

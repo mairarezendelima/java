@@ -15,14 +15,12 @@ public class Ex29 {
 		System.out.print("Qual vai ser o incremento? ");
 		inc = teclado.nextInt();
 
-        teclado.close();
-
 		while (ini <= fim) 
 		{
 			System.out.print(ini + " ");
 			ini += inc;
             Thread.sleep(1000);
 		}
-		System.out.println("\n\n");
+		System.out.println("\n");
     }
 }

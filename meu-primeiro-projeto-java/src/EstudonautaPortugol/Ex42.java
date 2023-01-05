@@ -14,7 +14,7 @@ public class Ex42 {
         DecimalFormat deci = new DecimalFormat("0.00");
 
         do {
-            System.out.print("\nNome: ");
+            System.out.print("Nome: ");
             nome = teclado.next();
             System.out.print("Sexo [F/M]: ");
             sexo = teclado.next().charAt(0);
@@ -43,18 +43,17 @@ public class Ex42 {
             System.out.println("------------------------");
         } while (Character.toUpperCase(continuar) != 'N');
 
-        teclado.close();
         float quantHomensFloat = quantHomens;
         mediaSalHomens = somaSalHomens / quantHomensFloat;
 
-        System.out.println("\n===== RESULTADOS =====");
-        System.out.println("\nTotal de funcionários: " + quantFunc);
-        System.out.println("\nTotal de homens: " + quantHomens);
-        System.out.println("\nTotal de mulheres: " + quantMulheres);
-        System.out.println("\nA média salarial dos homens é R$ " + deci.format(mediaSalHomens));
-        System.out.println("\nTemos " + quantMulheresMaisMil + " mulheres ganhando mais de R$ 1000.00");
-        System.out.println("\nO maior salário entre os homens é do " + nomeHomemMaiorSal + " ,que ganha R$ " + deci.format(salMaiorHomem));
-        System.out.println("\n---------------------");
-        System.out.println("\n\n");
+        System.out.println("===== RESULTADOS =====");
+        System.out.println("Total de funcionários: " + quantFunc);
+        System.out.println("Total de homens: " + quantHomens);
+        System.out.println("Total de mulheres: " + quantMulheres);
+        System.out.println("A média salarial dos homens é R$ " + deci.format(mediaSalHomens));
+        System.out.println("Temos " + quantMulheresMaisMil + " mulheres ganhando mais de R$ 1000.00");
+        System.out.println("O maior salário entre os homens é do " + nomeHomemMaiorSal + " ,que ganha R$ " + deci.format(salMaiorHomem));
+        System.out.println("---------------------");
+        System.out.println("\n");
     }
 }

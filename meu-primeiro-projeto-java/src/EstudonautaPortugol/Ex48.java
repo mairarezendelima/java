@@ -21,13 +21,13 @@ public class Ex48 {
             }
             Thread.sleep(500);
         }
-        System.out.println("\nO número " + numero + " foi divisível " + quantDivisivel + " vezes\n");
+        System.out.println("O número " + numero + " foi divisível " + quantDivisivel + " vezes");
         if (quantDivisivel < 3) {
             System.out.println("Logo, o número " + numero + " É primo!");
         }
         else {
             System.out.println("Logo, o número " + numero + " NÃO é primo!");
         }
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

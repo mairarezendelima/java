@@ -16,6 +16,6 @@ public class Ex55 {
             System.out.print(vetor[posicao] + " ");
             Thread.sleep(500);
         }
-        System.out.println("FIM!\n\n");
+        System.out.println("FIM!\n");
     }
 }

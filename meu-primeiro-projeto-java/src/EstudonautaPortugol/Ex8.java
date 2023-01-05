@@ -12,15 +12,13 @@ public class Ex8 {
         
         System.out.print("Qual é o preço do produto? R$ ");
         preco = teclado.nextFloat();
-
-		teclado.close();
 		
 		pdesc = preco * 0.95f;
 		dif = preco - pdesc;
 		
 		System.out.println("O produto custava R$ " + deci.format(preco));
-		System.out.println("\nCom 5% de desconto, o produto sai por R$ " + deci.format(pdesc));
-		System.out.println("\nAo todo, teremos R$ " + deci.format(dif) + " de economia");
-		System.out.println("\n\n");
+		System.out.println("Com 5% de desconto, o produto sai por R$ " + deci.format(pdesc));
+		System.out.println("Ao todo, teremos R$ " + deci.format(dif) + " de economia");
+		System.out.println("\n");
     }
 }

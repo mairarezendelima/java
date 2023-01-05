@@ -12,10 +12,8 @@ public class Ex3 {
         System.out.print("Me diga um número: ");
         n = Integer.parseInt(teclado.nextLine());
 
-        teclado.close();
-
         System.out.println("O antecessor de " + n + " é " + (n-1));
-        System.out.println("\nO sucessor de " + n + " é " + (n+1));
-        System.out.println("\n\n");
+        System.out.println("O sucessor de " + n + " é " + (n+1));
+        System.out.println("\n");
     }
 }

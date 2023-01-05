@@ -12,12 +12,10 @@ public class Ex12 {
         System.out.print("Digite seu nome completo: ");
         nomecompl = teclado.nextLine();
 
-        teclado.close();
-
         posi = nomecompl.indexOf(" "); // índice da primeira ocorrência de espaço vazio a partir do início
         pnome = nomecompl.substring(0, posi);
         
         System.out.println("Seu primeiro nome é " + pnome.toUpperCase());
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

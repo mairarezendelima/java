@@ -13,15 +13,13 @@ public class Ex11 {
         System.out.print("Em que cidade você mora? ");
         cidade = teclado.nextLine();
 
-        teclado.close();
-
         grande = cidade.toUpperCase();
         tam = cidade.length();
         firstCharacter = grande.charAt(0);
 
-        System.out.println("\n------ ANALISANDO ------");
-        System.out.println("\nVocê mora na cidade " + grande);
-        System.out.println("\nA primeira letra é " + firstCharacter + " e a cidade contém " + tam + " caracteres");
-        System.out.println("\n\n");
+        System.out.println("------ ANALISANDO ------");
+        System.out.println("Você mora na cidade " + grande);
+        System.out.println("A primeira letra é " + firstCharacter + " e a cidade contém " + tam + " caracteres");
+        System.out.println("\n");
     }
 }

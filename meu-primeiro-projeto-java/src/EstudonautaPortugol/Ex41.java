@@ -14,8 +14,8 @@ public class Ex41 {
 
 		while (true) {
 			System.out.println("------------ NOVO AMIGO ------------");
-			System.out.println("\nOBS: Digite ACABOU no nome para parar");
-			System.out.print("\nNome: ");
+			System.out.println("OBS: Digite ACABOU no nome para parar");
+			System.out.print("Nome: ");
 			nome = teclado.next();
 
 			if (nome.equalsIgnoreCase("ACABOU")) break; // Ignora se está em maiúsculas ou minúsculas; Os sinais "==" não funcionaram, deram erro
@@ -46,16 +46,15 @@ public class Ex41 {
 		
         float somaFloat = soma;
         media = somaFloat / indice;
-        teclado.close();
 
-		System.out.println("\n********* INTERROMPIDO **********");
-		System.out.println("\n\n===== RESULTADOS =====");
-		System.out.println("\nTotal de amigos: " + indice);
-		System.out.println("\nSoma das idades: " + soma);
-		System.out.println("\nMédia das idades: " + deci.format(media));
-		System.out.println("\nSeu amigo mais jovem é " + jovem +", com " + idadeJovem + " anos");
-		System.out.println("\nSeu amigo mais velho é " + velho +", com " + idadeVelho + " anos");
-		System.out.println("\n------------------------------------");
-		System.out.println("\n\n");
+		System.out.println("********* INTERROMPIDO **********");
+		System.out.println("===== RESULTADOS =====");
+		System.out.println("Total de amigos: " + indice);
+		System.out.println("Soma das idades: " + soma);
+		System.out.println("Média das idades: " + deci.format(media));
+		System.out.println("Seu amigo mais jovem é " + jovem +", com " + idadeJovem + " anos");
+		System.out.println("Seu amigo mais velho é " + velho +", com " + idadeVelho + " anos");
+		System.out.println("------------------------------------");
+		System.out.println("\n");
     }
 }

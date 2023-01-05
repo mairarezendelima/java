@@ -13,37 +13,37 @@ public class Ex45 {
         numero = random.nextInt(10);
 
         System.out.println("Vou pensar em um número entre 1 e 10");
-        System.out.println("\nVocê tem " + total + " chances para tentar adivinhar");
+        System.out.println("Você tem " + total + " chances para tentar adivinhar");
 
         do {
-            System.out.println("\n---------------------------------------");
-            System.out.println("\n         Chance nº " + indice + " de " + total + "      ");
-            System.out.println("\n---------------------------------------");
-            System.out.print("\nQual é o seu palpite? ");
+            System.out.println("---------------------------------------");
+            System.out.println("         Chance nº " + indice + " de " + total + "      ");
+            System.out.println("---------------------------------------");
+            System.out.print("Qual é o seu palpite? ");
             palpite = teclado.nextInt();
 
             if (palpite == numero) {
-                System.out.println("\nPARABÉNS! Você ACERTOU o número com " + indice+ " tentativa(s)!");
+                System.out.println("PARABÉNS! Você ACERTOU o número com " + indice+ " tentativa(s)!");
                 break;
             }
             else {
                 System.out.println("Infelizmente não foi dessa vez...");
-                System.out.println("\nMas vou te dar outra chance.");
+                System.out.println("Mas vou te dar outra chance.");
                 indice += 1;
                 if (palpite < numero) {
-                    System.out.println("\nChute um valor MAIOR");
+                    System.out.println("Chute um valor MAIOR");
                 }
                 else {
-                    System.out.println("\nChute um valor MENOR");
+                    System.out.println("Chute um valor MENOR");
                 }
             if (indice > total) {
-                System.out.println("\nSuas chances acabaram!");
+                System.out.println("Suas chances acabaram!");
                 break;
             }
             }
         } while (true);
         teclado.close();
-        System.out.println("\n\n===== FIM DO JOGO =====");
-        System.out.println("\n\n");
+        System.out.println("===== FIM DO JOGO =====");
+        System.out.println("\n");
     }
 }

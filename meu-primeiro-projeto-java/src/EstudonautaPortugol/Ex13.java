@@ -15,14 +15,12 @@ public class Ex13 {
         System.out.print("Digite a sua segunda nota: ");
         nota2 = teclado.nextFloat();
 
-        teclado.close();
-
         media = (nota1 + nota2) / 2;
 
         if (media >= 7) { 
             System.out.println("MEUS PARABÉNS!");
         }
         System.out.println("A sua média final foi de " + deci.format(media));
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

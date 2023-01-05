@@ -11,8 +11,6 @@ public class Ex24 {
         System.out.print("Em que estado do Brasil você nasceu? ");
 		estado = teclado.nextLine();
 
-        teclado.close();
-
         estado = estado.toUpperCase();
 
         System.out.print("Nascendo no estado " + estado + ", você é");
@@ -45,6 +43,6 @@ public class Ex24 {
             case "SE" -> System.out.print(" sergipano");
             case "TO" -> System.out.print(" tocantinense");
         }
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

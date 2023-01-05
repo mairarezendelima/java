@@ -13,11 +13,9 @@ public class Ex33 {
         System.out.print("Quantos números você quer que eu sorteie? ");
 		quant = teclado.nextInt();
 
-        teclado.close();
-
 		System.out.println("--------------------------------------------");
 		
-		System.out.print("\nSorteando os " + quant + " números: ");
+		System.out.print("Sorteando os " + quant + " números: ");
 
 		while (indice < quant) 
 		{
@@ -28,8 +26,8 @@ public class Ex33 {
 			soma += numero;
 			Thread.sleep(500);
 		}
-		System.out.println("\n--------------------------------------------");
-		System.out.println("\nA soma entre todos esses valores é " + soma);
-		System.out.println("\n\n");
+		System.out.println("--------------------------------------------");
+		System.out.println("A soma entre todos esses valores é " + soma);
+		System.out.println("\n");
     }
 }

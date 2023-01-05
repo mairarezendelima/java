@@ -29,16 +29,14 @@ public class Ex34 {
 			indice += 1;
 		}
 
-        teclado.close();
-
         somaParesFloat = somaPares;
         somaImparesFloat = somaImpares;
 
 		System.out.println("------------------------------------------------------------");
 		mediaPares = somaParesFloat / indicePares; // O indice começa do 1
 		mediaImpares = somaImparesFloat / indiceImpares;
-		System.out.println("\nVocê digitou " + indicePares + " números pares. E a média entre eles é " + deci.format(mediaPares));
-		System.out.println("\nVocê digitou " + indiceImpares + " números ímpares. E a média entre eles é " + deci.format(mediaImpares));
-		System.out.println("\n\n");
+		System.out.println("Você digitou " + indicePares + " números pares. E a média entre eles é " + deci.format(mediaPares));
+		System.out.println("Você digitou " + indiceImpares + " números ímpares. E a média entre eles é " + deci.format(mediaImpares));
+		System.out.println("\n");
     }
 }

@@ -28,11 +28,11 @@ public class Ex43 {
                 }
             }
         } while (Character.toUpperCase(resp) == 'S');
-        System.out.println("\n---------------------------------");
-        System.out.println("\nAo todo, você digitou " + indice + " valores");
-        System.out.println("\nVocê digitou " + quantPares + " valores pares");
-        System.out.println("\nVocê digitou " + quantImpares + " valores ímpares");
-        System.out.println("\nO valor " + menorImpar + " foi o menor número ímpar digitado");
-        System.out.println("\n\n");
+        System.out.println("---------------------------------");
+        System.out.println("Ao todo, você digitou " + indice + " valores");
+        System.out.println("Você digitou " + quantPares + " valores pares");
+        System.out.println("Você digitou " + quantImpares + " valores ímpares");
+        System.out.println("O valor " + menorImpar + " foi o menor número ímpar digitado");
+        System.out.println("\n");
     }
 }

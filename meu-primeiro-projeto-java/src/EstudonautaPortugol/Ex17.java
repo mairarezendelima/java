@@ -12,8 +12,6 @@ public class Ex17 {
         System.out.print("Digite um ano qualquer: ");
 		ano = teclado.nextInt();
 
-        teclado.close();
-
 		if (ano % 400 == 0) {
 			System.out.println("O ano de " + ano + " é bissexto!");
 		} 
@@ -25,6 +23,6 @@ public class Ex17 {
 				System.out.println("O ano de " + ano + " NÃO é bissexto!");
 			}
 		}
-		System.out.println("\n\n");
+		System.out.println("\n");
     }
 }

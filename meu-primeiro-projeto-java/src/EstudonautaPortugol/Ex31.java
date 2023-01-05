@@ -13,8 +13,6 @@ public class Ex31 {
 		System.out.print("Marcar os múltiplos de ");
 		m = teclado.nextInt();
 
-        teclado.close();
-
 		System.out.println("\n");
 
 		while (c >= 0)
@@ -28,6 +26,6 @@ public class Ex31 {
 			Thread.sleep(500);
 			c -= 1;
 		}
-		System.out.println("\n\n");
+		System.out.println("\n");
     }
 }

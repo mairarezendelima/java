@@ -15,7 +15,6 @@ public class Ex46 {
             System.out.println(numero + " x " + indice + " = " + numero * indice);
             Thread.sleep(500);
         }
-        teclado.close();
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

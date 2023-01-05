@@ -13,17 +13,15 @@ public class Ex14 {
         System.out.print("Qual foi o valor total das suas compras? R$ ");
         valor = teclado.nextFloat();
 
-        teclado.close();
-
         desc = valor * 0.10f;
         pago = valor - desc;
         
-        System.out.println("\nVocê comprou R$ " + deci.format(valor) + " na nossa loja! Obrigado!");
+        System.out.println("Você comprou R$ " + deci.format(valor) + " na nossa loja! Obrigado!");
         if (valor > 500) {
-            System.out.println("\n===== ATENÇÃO =====");
-            System.out.println("\nPor fazer mais de R$ 500,00 em compras, você vai receber R$ " + deci.format(desc) + " de desconto!");
-            System.out.println("\nO valor a ser pago é de R$ " + deci.format(pago) + ". Volte sempre!");
+            System.out.println("===== ATENÇÃO =====");
+            System.out.println("Por fazer mais de R$ 500,00 em compras, você vai receber R$ " + deci.format(desc) + " de desconto!");
+            System.out.println("O valor a ser pago é de R$ " + deci.format(pago) + ". Volte sempre!");
         }
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

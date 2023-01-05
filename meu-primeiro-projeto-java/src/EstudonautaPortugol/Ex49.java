@@ -9,7 +9,7 @@ public class Ex49 {
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("===== Sequência de Fibonacci =====");
-        System.out.print("\nQuantos elementos você quer exibir? ");
+        System.out.print("Quantos elementos você quer exibir? ");
         quant = teclado.nextInt();
 
         // n1 e n2 já são conhecidos
@@ -26,6 +26,6 @@ public class Ex49 {
             n2 = n3;
         }
         System.out.println("Acabou!");
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

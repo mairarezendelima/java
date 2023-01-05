@@ -10,8 +10,6 @@ public class Ex21 {
         
         System.out.print("Digite um número: ");
 		n = teclado.nextInt();
-
-        teclado.close();
 		
 		System.out.print("O número " + n + " digitado é ");
 		if (n > 0) {
@@ -23,6 +21,6 @@ public class Ex21 {
 		else {
 			System.out.print("NULO");
 		}
-		System.out.println("\n\n");
+		System.out.println("\n");
     }
 }

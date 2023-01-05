@@ -38,11 +38,11 @@ public class Ex54 {
                         break;
                     }
                     else {
-                        System.out.println("ERRO. Idade inválida\n");
+                        System.out.println("ERRO. Idade inválida");
                     }
                 }
                 else {
-                    System.out.println("ERRO. A idade deve ser um número inteiro\n");
+                    System.out.println("ERRO. A idade deve ser um número inteiro");
                 }
             }
             c += 1;
@@ -70,19 +70,19 @@ public class Ex54 {
                         break;
                     }
                     else {
-                        System.out.println("ERRO. Por favor, responda S ou N\n");
+                        System.out.println("ERRO. Por favor, responda S ou N");
                     }
                 }
                 else {
-                    System.out.println("ERRO. O valor deve ser uma letra\n");
+                    System.out.println("ERRO. O valor deve ser uma letra");
                 }
             }
         } while (Character.toUpperCase(continuar) == 'S');
-        System.out.println("\n==============================");
-        System.out.println("\nVocê cadastrou " + c + " pessoas");
-        System.out.println("\n" + nova + " é a pessoa mais nova, com " + menor + " anos");
-        System.out.println("\n" + velha + " é a pessoa mais velha, com " + maior + " anos");
-        System.out.println("\n==============================");
-        System.out.println("\n\n");
+        System.out.println("==============================");
+        System.out.println("Você cadastrou " + c + " pessoas");
+        System.out.println(nova + " é a pessoa mais nova, com " + menor + " anos");
+        System.out.println(velha + " é a pessoa mais velha, com " + maior + " anos");
+        System.out.println("==============================");
+        System.out.println("\n");
     }
 }

@@ -24,11 +24,9 @@ public class Ex32 {
 			indice += 1;
 		}
 
-        teclado.close();
-
 		System.out.println("---------------------------");
-		System.out.println("\nA soma dos pares é " + somaPares);
-		System.out.println("\nA soma dos ímpares é " + somaImpares);
-		System.out.println("\n\n");
+		System.out.println("A soma dos pares é " + somaPares);
+		System.out.println("A soma dos ímpares é " + somaImpares);
+		System.out.println("\n");
     }
 }

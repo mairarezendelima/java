@@ -16,17 +16,17 @@ public class Ex35 {
 		pesoRef = teclado.nextFloat();
 
 	while (indice <= quantPessoas) {
-		System.out.println("\n-------------------------------------");
-		System.out.println("\n          PESSOA " + indice + " DE " + quantPessoas + "         ");
-		System.out.println("\n-------------------------------------");
+		System.out.println("-------------------------------------");
+		System.out.println("          PESSOA " + indice + " DE " + quantPessoas + "         ");
+		System.out.println("-------------------------------------");
 
-		System.out.print("\nPeso (Kg): ");
+		System.out.print("Peso (Kg): ");
 		peso = teclado.nextFloat();
 		System.out.print("Sexo (M/F): ");
 		sexo = teclado.next().charAt(0);
 
 		if (peso > pesoRef) {
-			System.out.println("\n===== PESO ACIMA DO LIMITE =====");
+			System.out.println("===== PESO ACIMA DO LIMITE =====");
 			if (Character.toUpperCase(sexo) == 'M'){
 				quantHomens += 1;
 		}
@@ -35,15 +35,13 @@ public class Ex35 {
 			}
 		}
 		else {
-			System.out.println("\n===== PESO DENTRO DO LIMITE =====");
+			System.out.println("===== PESO DENTRO DO LIMITE =====");
 		}
 		indice += 1;
 	}
 
-	teclado.close();
-
-	System.out.println("\n\n--------------- Resultado -------------------");
-	System.out.println("\nAo todo, temos " + quantHomens + " homens e " + quantMulheres + " mulheres acima do peso de referência!");
-	System.out.println("\n\n");
+	System.out.println("--------------- Resultado -------------------");
+	System.out.println("Ao todo, temos " + quantHomens + " homens e " + quantMulheres + " mulheres acima do peso de referência!");
+	System.out.println("\n");
     }
 }

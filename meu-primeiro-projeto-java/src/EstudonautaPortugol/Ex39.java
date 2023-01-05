@@ -31,18 +31,16 @@ public class Ex39 {
 			}
 		}
 
-        teclado.close();
-
         float somaFloat = soma;
 		media = somaFloat / indice;
 		System.out.println("----------------------------------------");
-		System.out.println("\nPrograma encerrado!");
-		System.out.println("\n==========================================");
-		System.out.println("\nAo todo, foram digitados " + indice + " valores.");
-		System.out.println("\nA soma entre essses valores é " + soma);
-		System.out.println("\nA média entre eles é " + deci.format(media));
-		System.out.println("\nO maior valor digitado foi " + maior);
-		System.out.println("\n==========================================");
-		System.out.println("\n\n");
+		System.out.println("Programa encerrado!");
+		System.out.println("==========================================");
+		System.out.println("Ao todo, foram digitados " + indice + " valores.");
+		System.out.println("A soma entre essses valores é " + soma);
+		System.out.println("A média entre eles é " + deci.format(media));
+		System.out.println("O maior valor digitado foi " + maior);
+		System.out.println("==========================================");
+		System.out.println("\n");
     }
 }

@@ -15,6 +15,6 @@ public class Ex58 {
             System.out.println("[" + valor[passo] + "]  ");
             Thread.sleep(500);
         }
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

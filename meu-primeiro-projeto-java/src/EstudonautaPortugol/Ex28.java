@@ -14,45 +14,34 @@ public class Ex28 {
         System.out.print("Digite o preço do produto: R$ ");
 		preco = teclado.nextFloat();
 		
-		System.out.println("\n---------------------------------");
-		System.out.println("\n     REAJUSTADOR DE PREÇOS     ");
-		System.out.println("\n---------------------------------");
-		System.out.println("\n1  Carnaval\t\t[+10%]");
-		System.out.println("\n2  Férias escolares\t[+20%]");
-		System.out.println("\n3  Dia das crianças\t[+5%]");
-		System.out.println("\n4  Black Friday\t\t[-30%]");
-		System.out.println("\n5  Natal\t\t[-5%]");
-		System.out.println("\n---------------------------------");
+		System.out.println("---------------------------------");
+		System.out.println("     REAJUSTADOR DE PREÇOS     ");
+		System.out.println("---------------------------------");
+		System.out.println("1  Carnaval\t\t[+10%]");
+		System.out.println("2  Férias escolares\t[+20%]");
+		System.out.println("3  Dia das crianças\t[+5%]");
+		System.out.println("4  Black Friday\t\t[-30%]");
+		System.out.println("5  Natal\t\t[-5%]");
+		System.out.println("---------------------------------");
 		
-        System.out.print("\nDigite a sua opção: ");
+        System.out.print("Digite a sua opção: ");
 		opcao = teclado.nextInt();
 
-        teclado.close();
-
 		System.out.println("---------------------------------------------");
-		
-		switch(opcao)
-		{
-			case 1:
-				System.out.println("\nNa época do carnaval, o preço do produto aumenta para R$ " + deci.format(preco * 1.10));
-				break;
-			case 2:
-				System.out.println("\nNa época das férias escolares, o preço do produto aumenta para R$ " + deci.format(preco * 1.20));
-				break;
-			case 3:
-				System.out.println("\nNo dia das crianças, o preço do produto aumenta para R$ " + deci.format(preco * 1.05));
-				break;
-			case 4:
-				System.out.println("\nNa Black Friday, o preço do produto diminui para R$  " + deci.format(preco * 0.70));
-				break;
-			case 5:
-				System.out.println("\nNo Natal, o preço do produto diminui para R$ " + deci.format(preco * 0.95));
-				break;
-			default:
-				System.out.println("\nO preço do produto se mantém em R$ " + deci.format(preco));
-				break;
+
+		switch (opcao) {
+			case 1 ->
+					System.out.println("Na época do carnaval, o preço do produto aumenta para R$ " + deci.format(preco * 1.10));
+			case 2 ->
+					System.out.println("Na época das férias escolares, o preço do produto aumenta para R$ " + deci.format(preco * 1.20));
+			case 3 ->
+					System.out.println("No dia das crianças, o preço do produto aumenta para R$ " + deci.format(preco * 1.05));
+			case 4 ->
+					System.out.println("Na Black Friday, o preço do produto diminui para R$  " + deci.format(preco * 0.70));
+			case 5 -> System.out.println("No Natal, o preço do produto diminui para R$ " + deci.format(preco * 0.95));
+			default -> System.out.println("O preço do produto se mantém em R$ " + deci.format(preco));
 		}
-		System.out.println("\n----------------------------------------------");
-		System.out.println("\n\n");
+		System.out.println("----------------------------------------------");
+		System.out.println("\n");
     }
 }

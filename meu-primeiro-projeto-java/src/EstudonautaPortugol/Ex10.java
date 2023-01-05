@@ -14,13 +14,12 @@ public class Ex10 {
 		System.out.print("Quantos cigarros você fuma por dia? ");
         cig = teclado.nextInt();
 
-		teclado.close();
 
 		totcig = anos * cig * 365;
 		dperd = totcig * 10 / 1440; // Um dia tem 1440 minutos. Em 10 minutos, temos 10 / 1440 dias. 
 		
 		System.out.println("Ao todo, até agora você já fumou " + totcig + " cigarros!");
-		System.out.println("\nEstima-se que você já perdeu " + dperd + " dias de vida!");
-		System.out.println("\n\n");
+		System.out.println("Estima-se que você já perdeu " + dperd + " dias de vida!");
+		System.out.println("\n");
     }
 }

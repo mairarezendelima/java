@@ -16,20 +16,18 @@ public class Ex4 {
         System.out.print("Digite outro número: ");
         n2 = Integer.parseInt(teclado.nextLine());
 
-        teclado.close();
-
         float n1Float = n1;
         float n2Float = n2;
         float res = n1Float / n2Float;
 
-        System.out.println("\n---------- RESULTADOS ----------");
-        System.out.println("\nSOMA = " + (n1 + n2));
-        System.out.println("\nDIFERENÇA = " + (n1 - n2));
-        System.out.println("\nPRODUTO = " + (n1 * n2));
-        System.out.println("\nDIVISÃO REAL = " + (deci.format(res)));
-        System.out.println("\nDIVISÃO INTEIRA = " + (n1 / n2));
-        System.out.println("\nRESTO DA DIVISÃO = " + (n1 % n2));
-        System.out.println("\n\n");
+        System.out.println("---------- RESULTADOS ----------");
+        System.out.println("SOMA = " + (n1 + n2));
+        System.out.println("DIFERENÇA = " + (n1 - n2));
+        System.out.println("PRODUTO = " + (n1 * n2));
+        System.out.println("DIVISÃO REAL = " + (deci.format(res)));
+        System.out.println("DIVISÃO INTEIRA = " + (n1 / n2));
+        System.out.println("RESTO DA DIVISÃO = " + (n1 % n2));
+        System.out.println("\n");
     }
 }
 //String myString = "4152";

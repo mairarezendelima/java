@@ -14,8 +14,6 @@ public class Ex22 {
 		System.out.print("Segundo valor: ");
 		v2 = teclado.nextInt();
 
-        teclado.close();
-
 		if (v1 > v2) {
 			System.out.println("Os valores digitados em ordem são " + v2 + " e " + v1);
 		}
@@ -25,6 +23,6 @@ public class Ex22 {
 		else {
 			System.out.println("Não há necessidade de ordená-los. Os valores são iguais!");
 		}
-		System.out.println("\n\n");
+		System.out.println("\n");
     }
 }

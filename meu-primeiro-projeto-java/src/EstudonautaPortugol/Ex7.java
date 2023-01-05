@@ -15,13 +15,11 @@ public class Ex7 {
 		System.out.print("Altura (m): ");
         a = teclado.nextFloat();
 
-		teclado.close();
-
 		ar = l * a;
 		lt = ar / 2;
 		
 		System.out.println("Uma parede de " + l + " m por " + a + " m tem área de " + deci.format(ar) + " m²");
-		System.out.println("\nPrecisaremos de " + deci.format(lt) + " latas de tinta");
-		System.out.println("\n\n");
+		System.out.println("Precisaremos de " + deci.format(lt) + " latas de tinta");
+		System.out.println("\n");
     }
 }

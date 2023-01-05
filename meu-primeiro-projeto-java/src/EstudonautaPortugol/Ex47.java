@@ -30,8 +30,7 @@ public class Ex47 {
                 Thread.sleep(500);
             }
         }
-        teclado.close();
         System.out.println("Acabou!");
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 }

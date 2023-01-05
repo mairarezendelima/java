@@ -9,10 +9,8 @@ public class Ex23 {
 		
 		Scanner teclado = new Scanner(System.in);
         
-        System.out.print("\nEm que ano você nasceu? ");
+        System.out.print("Em que ano você nasceu? ");
 		anoNasc = teclado.nextInt();
-
-        teclado.close();
 		
 		Calendar cal = Calendar.getInstance();
         //Calendar cal = GregorianCalendar.getInstance();
@@ -26,16 +24,16 @@ public class Ex23 {
 		System.out.println("Estamos em " + anoAtual + " e você tem " + idade + " anos.");
 		
 		if (idade > 18) {
-			System.out.println("\nVocê já deveria ter se alistado no ano de " + alist);  
-			System.out.println("\nVocê já está atrasado " + atras + " ano (s)!");
+			System.out.println("Você já deveria ter se alistado no ano de " + alist);
+			System.out.println("Você já está atrasado " + atras + " ano (s)!");
 		} 
 		else if (idade < 18) {
-			System.out.println("\nVocê ainda não competou 18 anos. \nIsso só vai acontecer em " + alist);
-			System.out.println("\nAinda falta (m) " + adiant + " ano (s).");
+			System.out.println("Você ainda não competou 18 anos. \nIsso só vai acontecer em " + alist);
+			System.out.println("Ainda falta (m) " + adiant + " ano (s).");
 		}
 		else {
-			System.out.println("\nATENÇÃO! Você completa 18 anos neste ano de " + anoAtual + ". CORRA!");
+			System.out.println("ATENÇÃO! Você completa 18 anos neste ano de " + anoAtual + ". CORRA!");
 		}
-		System.out.println("\n\n");
+		System.out.println("\n");
     }
 }

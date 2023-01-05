@@ -14,8 +14,6 @@ public class Ex19 {
         System.out.print("Digite um número: ");
 		n = teclado.nextInt();
 
-        teclado.close();
-
         float nFloat = n;
 
 		if (n > 0) {
@@ -26,6 +24,6 @@ public class Ex19 {
 			resp = nFloat * (-1);
 			System.out.println("O oposto de " + n + " é " + deci.format(resp));
 		}
-		System.out.println("\n\n");
+		System.out.println("\n");
     }
 }

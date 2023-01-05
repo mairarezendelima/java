@@ -16,13 +16,11 @@ public class Ex2 {
 		nasc = teclado.nextInt();
 		System.out.print("Salário: R$ ");
 		sal = teclado.nextFloat();
-
-        teclado.close();
 		
 		System.out.println("--------------FICHA FUNCIONAL----------------");
-		System.out.println("\nNOME: " + nome);
-		System.out.println("\nNASCIMENTO EM " + nasc);
-		System.out.println("\nSALÁRIO DE R$ " + sal);
-		System.out.println("\n---------------------------------------------");
+		System.out.println("NOME: " + nome);
+		System.out.println("NASCIMENTO EM " + nasc);
+		System.out.println("SALÁRIO DE R$ " + sal);
+		System.out.println("---------------------------------------------");
     }
 }

@@ -13,9 +13,9 @@ public class Ex38 {
         while (indice <= 5) {
 			System.out.println("-----------------\n");
 			System.out.println(indice + "ª PESSOA");
-			System.out.println("\n-----------------");
+			System.out.println("-----------------");
 
-			System.out.print("\nSexo (M/F): ");
+			System.out.print("Sexo (M/F): ");
 			sexo = teclado.next().charAt(0);
 			System.out.print("Nome: ");
 			nome = teclado.next();
@@ -64,15 +64,13 @@ public class Ex38 {
 			}
 			indice++;
 		}
-
-        teclado.close();
         
 		System.out.println("===================");
-		System.out.println("\nAo todo, tivemos " + quantHomens + " homens e " + quantMulheres + " mulheres.");
-		System.out.println("\nO homem mais velho é " + nomeHomemVelho + " com " + idadeHomemVelho + " anos.");
-		System.out.println("\nO homem mais jovem é " + nomeHomemJovem + " com " + idadeHomemJovem + " anos.");
-		System.out.println("\nA mulher mais velha é " + nomeMulherVelha + " com " + idadeMulherVelha + " anos.");
-		System.out.println("\nA mulher mais jovem é " + nomeMulherJovem + " com " + idadeMulherJovem + " anos.");
-		System.out.println("\n\n");
+		System.out.println("Ao todo, tivemos " + quantHomens + " homens e " + quantMulheres + " mulheres.");
+		System.out.println("O homem mais velho é " + nomeHomemVelho + " com " + idadeHomemVelho + " anos.");
+		System.out.println("O homem mais jovem é " + nomeHomemJovem + " com " + idadeHomemJovem + " anos.");
+		System.out.println("A mulher mais velha é " + nomeMulherVelha + " com " + idadeMulherVelha + " anos.");
+		System.out.println("A mulher mais jovem é " + nomeMulherJovem + " com " + idadeMulherJovem + " anos.");
+		System.out.println("\n");
     }
 }

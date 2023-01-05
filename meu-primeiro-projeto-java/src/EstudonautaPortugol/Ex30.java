@@ -9,10 +9,8 @@ public class Ex30 {
 		Scanner teclado = new Scanner(System.in);
         
         System.out.println("======= JOGO DO PIN ========");
-		System.out.print("\n\nQuer contar até quanto? ");
+		System.out.print("Quer contar até quanto? ");
 		fim = teclado.nextInt();
-
-        teclado.close();
 
 		System.out.print("\n");
 
@@ -28,6 +26,6 @@ public class Ex30 {
 			Thread.sleep(500);
 			c += 1;
 		}
-		System.out.print("\n\n");
+		System.out.print("\n");
     }
 }

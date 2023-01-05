@@ -24,6 +24,6 @@ public class Ex56 {
             System.out.print(pos + ": {" + vetor[pos] + "}  ");
             Thread.sleep(500);
         }
-        System.out.println("FIM!\n\n");
+        System.out.println("FIM!\n");
     }
 }

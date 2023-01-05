@@ -14,15 +14,13 @@ public class Ex6 {
 
 		float d = teclado.nextFloat();
 
-        teclado.close();
-
-		System.out.println("\n---------- CONVERTENDO ----------\n");
-        System.out.println(deci.format(d / 1000) + " Km\n");
-        System.out.println(deci.format(d / 100) + " hm\n");
-        System.out.println(deci.format(d / 10) + " dam\n");
-        System.out.println(deci.format(d * 10) + " dm\n");
-        System.out.println(deci.format(d * 100) + " cm\n");
-        System.out.println(deci.format(d * 1000) + " mm\n");
-		System.out.println("\n\n");
+		System.out.println("---------- CONVERTENDO ----------");
+        System.out.println(deci.format(d / 1000) + " Km");
+        System.out.println(deci.format(d / 100) + " hm");
+        System.out.println(deci.format(d / 10) + " dam");
+        System.out.println(deci.format(d * 10) + " dm");
+        System.out.println(deci.format(d * 100) + " cm");
+        System.out.println(deci.format(d * 1000) + " mm");
+		System.out.println("\n");
     }
 }

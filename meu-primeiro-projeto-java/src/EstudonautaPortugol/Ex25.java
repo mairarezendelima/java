@@ -17,8 +17,6 @@ public class Ex25 {
 		System.out.print("Terceiro valor: ");
 		c = teclado.nextInt();
 
-        teclado.close();
-
 		if (a > b) {
 			if (c > a) {
 				maior = c;
@@ -52,9 +50,9 @@ public class Ex25 {
 			menor = c;
 		}
 		System.out.println("--------------------------------------------------------------------");
-		System.out.println("\nMAIOR: " + maior);
-		System.out.println("\nINTERMEDIÁRIO: " + meio);
-		System.out.println("\nMENOR: " + menor);
-		System.out.println("\n\n");
+		System.out.println("MAIOR: " + maior);
+		System.out.println("INTERMEDIÁRIO: " + meio);
+		System.out.println("MENOR: " + menor);
+		System.out.println("\n");
     }
 }

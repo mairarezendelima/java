@@ -13,10 +13,8 @@ public class Ex36 {
         System.out.print("Quantos números vou sortear? ");
 		quant = teclado.nextInt();
 
-        teclado.close();
-
-		System.out.println("\n---------------------------");
-		System.out.println("\nSorteando " + quant + " números:\n");
+		System.out.println("---------------------------");
+		System.out.println("Sorteando " + quant + " números:\n");
 		while (indice <= quant)
 		{
 			numero = random.nextInt(10);
@@ -31,7 +29,7 @@ public class Ex36 {
 			Thread.sleep(500);
 			indice += 1;
 		}
-		System.out.println("\n\nDos " + quant + " números sorteados, temos " + maiores5 + " maiores que 5" + " e " + divisiveis3 + " divisíveis por 3"); 
-		System.out.println("\n\n");
+		System.out.println("Dos " + quant + " números sorteados, temos " + maiores5 + " maiores que 5" + " e " + divisiveis3 + " divisíveis por 3");
+		System.out.println("\n");
     }
 }

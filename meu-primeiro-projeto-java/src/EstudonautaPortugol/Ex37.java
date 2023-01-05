@@ -12,9 +12,9 @@ public class Ex37 {
         while (indice <= 3) {
 			System.out.println("-----------------\n");
 			System.out.println(indice + "ª PESSOA");
-			System.out.println("\n-----------------");
+			System.out.println("-----------------");
 
-			System.out.print("\nNome: ");
+			System.out.print("Nome: ");
 			nome = teclado.next(); // String: O next() é para receber uma só palavra; se é pra receber uma frase, usar nextLine()
 			System.out.print("Idade: ");
 			idade = teclado.nextInt();
@@ -37,11 +37,10 @@ public class Ex37 {
 			}
 			indice += 1;
 		}
-        teclado.close();
 
 		System.out.println("===================");
-		System.out.println("\nA pessoa mais velha é " + velho + " com " + maior + " anos.");
-		System.out.println("\nA pessoa mais jovem é " + jovem + " com " + menor + " anos.");
-		System.out.println("\n\n");
+		System.out.println("A pessoa mais velha é " + velho + " com " + maior + " anos.");
+		System.out.println("A pessoa mais jovem é " + jovem + " com " + menor + " anos.");
+		System.out.println("\n");
     }
 }

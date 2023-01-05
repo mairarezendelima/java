@@ -49,10 +49,10 @@ public class Ex53 {
             }
         } while (Character.toUpperCase(continuar) == 'S');
 
-        System.out.println("\n-------------------------");
+        System.out.println("-------------------------");
         System.out.println("Você digitou " + indice + " valores");
         System.out.println("A soma entre eles é " + soma);
-        System.out.println("\n-------------------------");
+        System.out.println("-------------------------");
         System.out.println("\n");
     }
 }

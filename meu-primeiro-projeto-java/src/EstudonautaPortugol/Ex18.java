@@ -17,12 +17,10 @@ public class Ex18 {
         Scanner teclado = new Scanner(System.in);
         DecimalFormat deci = new DecimalFormat("0.00");
 		
-		System.out.print("\nInforme a distância total, em km: ");
+		System.out.print("Informe a distância total, em km: ");
 		dist = teclado.nextFloat();
 
-        teclado.close();
-
-		System.out.println("\n------------------ RESULTADO ----------------------");
+		System.out.println("------------------ RESULTADO ----------------------");
 		
 		if (dist <= 200) {
 			fator = 0.5f;
@@ -32,9 +30,9 @@ public class Ex18 {
 		}
 		total = dist * fator;
 		
-		System.out.println("\nUma viagem de " + dist + " km vai custar R$ " + deci.format(fator) + "/km.");
-		System.out.println("\nValor total: R$ " + deci.format(total));
-		System.out.println("\n====================================================");
-		System.out.println("\n\n");
+		System.out.println("Uma viagem de " + dist + " km vai custar R$ " + deci.format(fator) + "/km.");
+		System.out.println("Valor total: R$ " + deci.format(total));
+		System.out.println("====================================================");
+		System.out.println("\n");
     }
 }

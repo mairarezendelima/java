@@ -10,8 +10,6 @@ public class Ex1 {
 		
 		System.out.print("Olá, qual é o seu nome? ");
 		nome = teclado.nextLine();
-
-        teclado.close();
 		
 		System.out.println("Tudo bem, " + nome + "? É um grande prazer te conhecer!");
     }
