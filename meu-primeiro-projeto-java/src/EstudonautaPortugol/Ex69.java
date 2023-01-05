@@ -1,34 +1,26 @@
 package EstudonautaPortugol;
 
 public class Ex69 {
-    public static void main(String[] args) throws InterruptedException {
-        String faixa;
-        int quant = 0, borda = 0;
-        String txt = " ";
+    static void meuEscreva(String txt, int quant, int borda) throws InterruptedException {
 
-        switch (borda) {
-            case 1:
-            faixa = "+----------=====----------+\n";
-            break;
-            case 2:
-            faixa = "----------:::::::----------\n";
-            break;
-            case 3:
-            faixa = "<<<<<<<<<<------->>>>>>>>>>\n";
-            break;
-            default:
-            faixa = "";
-            break;
-        }
+        String faixa = switch (borda) {
+            case 1 -> "+----------=====----------+\n";
+            case 2 -> "----------:::::::----------\n";
+            case 3 -> "<<<<<<<<<<------->>>>>>>>>>\n";
+            default -> "";
+        };
         System.out.print(faixa);
+
         for (int cont = 1; cont <= quant; cont++) {
-            System.out.print(txt + "\n");
+            System.out.println(txt);
             Thread.sleep(300);
         }
         System.out.print(faixa);
-        System.out.print("Sou Estudonauta" + 1 + 1);
-        System.out.print("Estou aprendendo a programar" + 3 + 2);
-        System.out.print("E estou adorando" + 2 + 3);
-        System.out.print("Sucesso total!" + 5 + 0);
+    }
+    public static void main(String[] args) throws InterruptedException {
+        meuEscreva("Sou Estudonauta", 1, 1);
+        meuEscreva("Estou aprendendo a programar", 3, 2);
+        meuEscreva("E estou adorando", 2, 3);
+        meuEscreva("Sucesso total!", 5, 0);
     }
 }
