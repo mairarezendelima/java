@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Ex35 {
     public static void main(String[] args) {
         int quantPessoas, indice = 1, quantHomens = 0, quantMulheres = 0;
-	float pesoRef, peso;
-	char sexo;
+		float pesoRef, peso;
+		char sexo;
 		
-	Scanner teclado = new Scanner(System.in);
+		Scanner teclado = new Scanner(System.in);
         
         System.out.print("Quantas pessoas vamos cadastrar? ");
-	quantPessoas = teclado.nextInt();
-	System.out.print("Qual será o peso de referência? (Kg) ");
-	pesoRef = teclado.nextFloat();
+		quantPessoas = teclado.nextInt();
+		System.out.print("Qual será o peso de referência? (Kg) ");
+		pesoRef = teclado.nextFloat();
 
 	while (indice <= quantPessoas) {
 		System.out.println("\n-------------------------------------");

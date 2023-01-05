@@ -8,7 +8,6 @@ public class Ex6 {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-
         DecimalFormat deci = new DecimalFormat("0.00");
 
 		System.out.print("Distância em metros: ");
