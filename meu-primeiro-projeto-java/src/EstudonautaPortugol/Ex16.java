@@ -23,7 +23,7 @@ public class Ex16 {
 			System.out.println("Espero sinceramente que você tenha se alistado.");
 		} 
 		else {
-			System.out.println("Você ainda não competou 18 anos. Não pode se alistar.");
+			System.out.println("Você ainda não completou 18 anos. Não pode se alistar.");
 		}
 		System.out.println("\n");
     }

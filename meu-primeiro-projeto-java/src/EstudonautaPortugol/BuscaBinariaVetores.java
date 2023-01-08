@@ -39,9 +39,11 @@ public class BuscaBinariaVetores {
         }
 
         // Mostrar o vetor
-        for (int i = 0; i < vet.length; i++) {
+        int i = 0;
+        while (i < vet.length) {
             System.out.print(vet[i] + " ");
             Thread.sleep(200);
+            i++;
         }
         // Busca binária
         int chave;
